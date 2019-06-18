@@ -1,0 +1,16 @@
+{% if params.company_id == nil %}
+	{"status": "500", "message": "{{ l.no_company_id }}"}
+{% else %}
+
+	{% assign tasks_query 	= "tasks" | db_find: company_id: params.company_id, _id: params.id %}
+	{% assign task 					= tasks_query.results.first %}
+
+	{% if task == nil %}
+		{"status": "404", "message": "{{ l.not_found }}"}
+	{% else %}
+		{
+			"status": "200",
+			"task": {% include tasks/task %}
+		}
+	{% endif %}
+{% endif %}

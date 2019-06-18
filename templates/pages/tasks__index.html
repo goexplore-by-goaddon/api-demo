@@ -9,10 +9,8 @@
 		"status": "200",
 		"tasks": [
 			{% for task in tasks limit: %}
-				{
-					"_id": "{{ task._id }}",
-					"name": "{{ task.name }}"
-				}{% if task != tasks.last %},{% endif %}
+				{% include tasks/task %}
+				{% if task != tasks.last %},{% endif %}
 			{% endfor %}
 		]
 	}
