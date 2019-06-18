@@ -1,0 +1,12 @@
+{% if params.company_id == nil or params.name == nil %}
+	{"status": "422", "message": "{{ l.params_missing }}"}
+{% else %}
+
+	{% assign tasks_insertion = "create_task" | db_insert_one: company_id: params.company_id, name: params.name %}
+
+	{% if tasks_insertion._id == nil %}
+		{"status": "422", "message": "{{ l.not_created }}"}
+	{% else %}
+		{"status": "200", "message": "{{ l.created }}", "_id": "{{ tasks_insertion._id }}"}
+	{% endif %}
+{% endif %}
