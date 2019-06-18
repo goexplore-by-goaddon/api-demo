@@ -12,7 +12,7 @@
 				{
 					"_id": "{{ task._id }}",
 					"name": "{{ task.name }}"
-				}{% if taks != tasks.last %},{% endif %}
+				}{% if task != tasks.last %},{% endif %}
 			{% endfor %}
 		]
 	}
