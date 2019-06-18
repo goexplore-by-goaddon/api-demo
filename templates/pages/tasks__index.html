@@ -5,6 +5,6 @@
 	{% assign tasks_query 		= "tasks" | db_find: company_id: params.company_id %}
 	{% assign tasks 					= tasks_query.results %}
 
-	{"status": "200", "tasks": tasks}
+	{"status": "200", "tasks": {{ tasks }}}
 
 {% endif %}
