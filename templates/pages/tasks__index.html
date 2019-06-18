@@ -9,7 +9,7 @@
 		"status": "200",
 		"tasks": [
 			{% for task in tasks %}
-				{% include tasks/task %}
+				{% include "tasks/task" %}
 				{% if task != tasks.last %},{% endif %}
 			{% endfor %}
 		]
