@@ -1,5 +1,6 @@
 {
 	"authenticate_user": {
-		"root": false
+		"root": false,
+		"static_pages__index": false
 	}
 }
