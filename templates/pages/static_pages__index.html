@@ -1,5 +1,5 @@
 <h1 class="display-4">{{ l.headline }}</h1>
 <p>{{ l.explainer }}.</p>
 {% assign company_id = "5d1a22fc3ab42f28eb45454c" %}
-{% assign index = "/tasks.json?company_id={{ company_id }}" %}
+{% capture index %}/tasks.json?company_id={{ company_id }}{% endcapture %}
 <p><a href="{{ index }}" target="_blank">{{ index }}</a></p>
