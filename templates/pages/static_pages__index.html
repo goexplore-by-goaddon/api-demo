@@ -14,22 +14,23 @@
 	<a href="{{ show }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a>
 </p>
 
-<p>
-	<form action="/tasks.json" method="post" target="_blank">
-		<div class="input-group">
-			<input type="hidden" name="company_id" value="{{ company_id }}">
-			<input class="form-control mr-3" type="text" name="name" placeholder="{{ l.placeholders.name }}">
-			<input class="btn btn-outline-primary" type="submit" value="{{ l.buttons.create }}">
-		</div>
-	</form>
-</p>
-
-{% capture update %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
-<p>
-	<form action="{{ update }}" method="post" target="_blank">
-		<input type="hidden" name="_method" value="patch">
-		<button type="submit" class="text-primary" style="background:none; border: none; padding:0 !important;">
-			PATCH {{ update }} <i class="fas fa-external-link-alt"></i>
+<form action="/tasks.json" method="post" target="_blank">
+	<div class="input-group">
+		<input type="hidden" name="company_id" value="{{ company_id }}">
+		<input class="form-control mr-3" type="text" name="name" placeholder="{{ l.placeholders.create_name }}">
+		<button type="submit" class="btn btn-outline-primary">
+			{{ l.buttons.create }} <i class="fas fa-external-link-alt"></i>
 		</button>
-	</form>
-</p>
+	</div>
+</form>
+
+<form action="/tasks/{{ task_id }}.json" method="post" target="_blank">
+	<div class="input-group">
+		<input type="hidden" name="_method" value="patch">
+		<input type="hidden" name="company_id" value="{{ company_id }}">
+		<input class="form-control mr-3" type="text" name="name" placeholder="{{ l.placeholders.update_name }}">
+		<button type="submit" class="btn btn-outline-primary">
+			{{ l.buttons.update }} <i class="fas fa-external-link-alt"></i>
+		</button>
+	</div>
+</form>

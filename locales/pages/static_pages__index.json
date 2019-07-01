@@ -3,10 +3,12 @@
 		"headline": "Welcome",
 		"explainer": "This is a demo API",
 		"placeholders": {
-			"name": "Enter task name..."
+			"create_name": "Enter task name...",
+			"update_name": "Update the task name..."
 		},
 		"buttons": {
-			"create": "Create"
+			"create": "Create",
+			"update": "Update"
 		}
 	}
 }
