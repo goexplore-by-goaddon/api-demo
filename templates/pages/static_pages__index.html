@@ -24,10 +24,8 @@
 	</div>
 </form>
 
-<form accept-charset="UTF-8" action="/tasks/{{ task_id }}.json" method="post" target="_blank">
+<form action="/tasks/{{ task_id }}.json" method="patch" target="_blank">
 	<div class="input-group">
-		<input type="hidden" name="_method" value="patch">
-		<input name="utf8" type="hidden" value="&#x2713;">
 		<input type="hidden" name="company_id" value="{{ company_id }}">
 		<input class="form-control mr-3" type="text" name="name" placeholder="{{ l.placeholders.update_name }}">
 		<button type="submit" class="btn btn-outline-primary">
