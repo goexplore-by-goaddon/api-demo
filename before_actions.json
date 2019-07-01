@@ -1,8 +1,14 @@
 {
 	"authenticate": {
-		"unauthenticated": false
+		"unauthenticated": false,
+		"blank": false
 	},
 	"container": {
-		"static_pages__index": "unauthenticated"
+		"static_pages__index": "unauthenticated",
+		"tasks__create": "blank",
+		"tasks__destroy": "blank",
+		"tasks__index": "blank",
+		"tasks__show": "blank",
+		"tasks__update": "blank"
 	}
 }
