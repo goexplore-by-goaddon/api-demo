@@ -1,6 +1,12 @@
 {
 	"en": {
 		"headline": "Welcome",
-		"explainer": "This is a demo API"
+		"explainer": "This is a demo API",
+		"placeholders": {
+			"name": "Enter task name..."
+		},
+		"buttons": {
+			"create": "Create"
+		}
 	}
 }
