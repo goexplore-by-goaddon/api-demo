@@ -1,5 +1,12 @@
 <h1 class="display-4">{{ l.headline }}</h1>
 <p>{{ l.explainer }}.</p>
-{% assign company_id = "5d1a22fc3ab42f28eb45454c" %}
+{% assign company_id 	= "5d1a22fc3ab42f28eb45454c" %}
+{% assign task_id 		= "5d1a24063ab42f28eb45454d" %}
+
+
 {% capture index %}/tasks.json?company_id={{ company_id }}{% endcapture %}
-<p><a href="{{ index }}" target="_blank">{{ index }}</a></p>
+<p><a href="{{ index }}" target="_blank">{{ index }} <i class="fas fa-external-link-alt"></i></a></p>
+
+{% capture show %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
+<p><a href="{{ show }}" target="_blank">{{ show }} <i class="fas fa-external-link-alt"></i></a></p>
+
