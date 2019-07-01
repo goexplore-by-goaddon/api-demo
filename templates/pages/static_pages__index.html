@@ -5,8 +5,8 @@
 
 
 {% capture index %}/tasks.json?company_id={{ company_id }}{% endcapture %}
-<p><a href="{{ index }}" target="_blank">{{ index }} <i class="fas fa-external-link-alt"></i></a></p>
+<p><a href="{{ index }}" target="_blank">GET {{ index }} <i class="fas fa-external-link-alt"></i></a></p>
 
 {% capture show %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
-<p><a href="{{ show }}" target="_blank">{{ show }} <i class="fas fa-external-link-alt"></i></a></p>
+<p><a href="{{ show }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a></p>
 
