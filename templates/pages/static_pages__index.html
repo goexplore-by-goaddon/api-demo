@@ -17,6 +17,6 @@
 {% capture create %}/tasks.json?company_id={{ company_id }}&name=Work{% endcapture %}
 <p>
 	<form action="{{ create }}" method="post" target="_blank">
-		<input class="text-primary" type="submit" value="POST {{ create }}" style="background:none; color:inherit; border:none; padding:0!important; font: inherit; cursor: pointer;">
+		<input class="text-primary" type="submit" value="POST {{ create }} <i class='fas fa-external-link-alt'></i>" style="border: none; padding:0 !important;">
 	</form>
 </p>
