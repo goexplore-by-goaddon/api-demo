@@ -16,7 +16,7 @@
 
 {% capture create %}/tasks.json?company_id={{ company_id }}&name=Work{% endcapture %}
 <p>
-	<form action="/{{ create }}" method="post" target="_blank">
+	<form action="{{ create }}" method="post" target="_blank">
 		<input class="text-primary" type="submit" value="POST {{ create }}" style="background:none; color:inherit; border:none; padding:0!important; font: inherit; cursor: pointer;">
 	</form>
 </p>
