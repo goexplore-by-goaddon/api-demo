@@ -35,3 +35,14 @@
 		</button>
 	</div>
 </form>
+
+{% capture destroy %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
+<form action="{{ destroy }}" method="delete" target="_blank">
+	<div class="input-group">
+		<input type="hidden" name="company_id" value="{{ company_id }}">
+		<input type="hidden" name="_id" value="{{ task_id }}">
+		<button type="submit" class="text-primary" style="background:none; border: none; padding:0 !important;">
+			DELETE {{ destroy }} <i class="fas fa-external-link-alt"></i>
+		</button>
+	</div>
+</form>
