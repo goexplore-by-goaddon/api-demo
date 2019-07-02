@@ -11,14 +11,6 @@
 	<a href="{{ index }}" target="_blank">GET {{ index }} <i class="fas fa-external-link-alt"></i></a>
 </p>
 
-<h5 class="mb-2">{{ l.headlines.show }}</h5>
-<p>{{ l.explainers.show }}</p>
-
-{% capture show %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
-<p>
-	<a href="{{ show }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a>
-</p>
-
 <h5 class="mb-2">{{ l.headlines.create }}</h5>
 <p>{{ l.explainers.create }}</p>
 
@@ -32,6 +24,14 @@
 		</button>
 	</div>
 </form>
+
+<h5 class="mb-2">{{ l.headlines.show }}</h5>
+<p>{{ l.explainers.show }}</p>
+
+{% capture show %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
+<p>
+	<a href="{{ show }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a>
+</p>
 
 <h5 class="mb-2">{{ l.headlines.update }}</h5>
 <p>{{ l.explainers.update }}</p>

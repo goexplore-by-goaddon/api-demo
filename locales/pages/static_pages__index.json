@@ -3,18 +3,18 @@
 		"headline": "Welcome",
 		"explainer": "This is a demo API",
 		"headlines": {
-			"create": "Create the task",
-			"destroy": "Destroy your task",
-			"index": "Check your tasks",
-			"show": "Show your task",
-			"update": "Update your task"
+			"create": "Create task",
+			"destroy": "Destroy task",
+			"index": "Check tasks",
+			"show": "Show task",
+			"update": "Update task"
 		},
 		"explainers": {
-			"create": "Create the task",
-			"destroy": "Destroy your task",
-			"index": "Check your tasks",
-			"show": "Show your task",
-			"update": "Update your task"
+			"create": "Create a task with a name of your choosing.",
+			"destroy": "Destroy the task.",
+			"index": "Check to confirm that no tasks exists.",
+			"show": "Check the created task.",
+			"update": "Update the name of the task."
 		},
 		"placeholders": {
 			"create_name": "Enter task name...",
