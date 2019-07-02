@@ -2,6 +2,7 @@
 	"create_task": {
 		"klass": "tasks",
 		"document": {
+			"_id": "{{ _id }}",
 			"company_id": "{{ company_id }}",
 			"name": "{{ name }}"
 		}

@@ -2,7 +2,7 @@
 	{"status": "422", "message": "{{ l.params_missing }}"}
 {% else %}
 
-	{% assign tasks_insertion = "create_task" | db_insert_one: company_id: params.company_id, name: params.name %}
+	{% assign tasks_insertion = "create_task" | db_insert_one: _id: params._id, company_id: params.company_id, name: params.name %}
 
 	{% if tasks_insertion._id == nil %}
 		{"status": "422", "message": "{{ l.not_created }}"}
