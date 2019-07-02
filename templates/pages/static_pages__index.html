@@ -1,7 +1,7 @@
 <h1 class="display-4">{{ l.headline }}</h1>
 <p>{{ l.explainer }}.</p>
 {% assign company_id 	= "5d1a22fc3ab42f28eb45454c" %}
-{% assign task_id 		= "5d1a24063ab42f28eb45454d" %}
+{% assign task_id 		= "" | _id_new %}
 
 
 {% capture index %}/tasks.json?company_id={{ company_id }}{% endcapture %}
@@ -14,7 +14,7 @@
 	<a href="{{ show }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a>
 </p>
 
-<form action="/tasks.json" method="post" target="_blank">
+<form class="mb-3" action="/tasks.json" method="post" target="_blank">
 	<div class="input-group">
 		<input type="hidden" name="company_id" value="{{ company_id }}">
 		<input class="form-control mr-3" type="text" name="name" placeholder="{{ l.placeholders.create_name }}">
@@ -24,7 +24,7 @@
 	</div>
 </form>
 
-<form action="/tasks/{{ task_id }}.json" method="patch" target="_blank">
+<form class="mb-3" action="/tasks/{{ task_id }}.json" method="patch" target="_blank">
 	<div class="input-group">
 		<input type="hidden" name="company_id" value="{{ company_id }}">
 		<input class="form-control mr-3" type="text" name="name" placeholder="{{ l.placeholders.update_name }}">
