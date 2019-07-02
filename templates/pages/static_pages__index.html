@@ -17,6 +17,7 @@
 <form class="mb-3" action="/tasks.json" method="post" target="_blank">
 	<div class="input-group">
 		<input type="hidden" name="company_id" value="{{ company_id }}">
+		<input type="hidden" name="_id" value="{{ task_id }}">
 		<input class="form-control mr-3" type="text" name="name" placeholder="{{ l.placeholders.create_name }}">
 		<button type="submit" class="btn btn-outline-primary">
 			{{ l.buttons.create }} <i class="fas fa-external-link-alt"></i>
