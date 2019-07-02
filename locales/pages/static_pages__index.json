@@ -2,6 +2,20 @@
 	"en": {
 		"headline": "Welcome",
 		"explainer": "This is a demo API",
+		"headlines": {
+			"create": "Create the task",
+			"destroy": "Destroy your task",
+			"index": "Check your tasks",
+			"show": "Show your task",
+			"update": "Update your task"
+		},
+		"explainers": {
+			"create": "Create the task",
+			"destroy": "Destroy your task",
+			"index": "Check your tasks",
+			"show": "Show your task",
+			"update": "Update your task"
+		},
 		"placeholders": {
 			"create_name": "Enter task name...",
 			"update_name": "Update the task name..."

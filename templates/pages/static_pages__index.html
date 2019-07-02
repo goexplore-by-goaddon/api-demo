@@ -3,16 +3,24 @@
 {% assign company_id 	= "" | _id_new %}
 {% assign task_id 		= "" | _id_new %}
 
+<h5 class="mb-2">{{ l.headlines.index }}</h5>
+<p>{{ l.explainers.index }}</p>
 
 {% capture index %}/tasks.json?company_id={{ company_id }}{% endcapture %}
 <p>
 	<a href="{{ index }}" target="_blank">GET {{ index }} <i class="fas fa-external-link-alt"></i></a>
 </p>
 
+<h5 class="mb-2">{{ l.headlines.show }}</h5>
+<p>{{ l.explainers.show }}</p>
+
 {% capture show %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
 <p>
 	<a href="{{ show }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a>
 </p>
+
+<h5 class="mb-2">{{ l.headlines.create }}</h5>
+<p>{{ l.explainers.create }}</p>
 
 <form class="mb-3" action="/tasks.json" method="post" target="_blank">
 	<div class="input-group">
@@ -25,6 +33,9 @@
 	</div>
 </form>
 
+<h5 class="mb-2">{{ l.headlines.update }}</h5>
+<p>{{ l.explainers.update }}</p>
+
 <form class="mb-3" action="/tasks/{{ task_id }}.json" method="post" target="_blank">
 	<div class="input-group">
 		<input type="hidden" name="_method" value="patch">
@@ -35,6 +46,9 @@
 		</button>
 	</div>
 </form>
+
+<h5 class="mb-2">{{ l.headlines.destroy }}</h5>
+<p>{{ l.explainers.destroy }}</p>
 
 {% capture destroy %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
 <form action="{{ destroy }}" method="post" target="_blank">
