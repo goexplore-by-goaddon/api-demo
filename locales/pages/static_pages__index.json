@@ -20,7 +20,7 @@
 		},
 		"placeholders": {
 			"create_name": "Enter task name...",
-			"update_name": "Update the task name..."
+			"update_name": "Enter task name..."
 		},
 		"buttons": {
 			"create": "Create",
