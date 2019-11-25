@@ -8,13 +8,13 @@
 
 {% capture index %}/tasks.json?company_id={{ company_id }}{% endcapture %}
 <p>
-	<a href="{{ index }}" target="_blank">GET {{ index }} <i class="fas fa-external-link-alt"></i></a>
+	<a href="{{ 'tasks__index' | path_for: format: 'json', company_id: company_id }}" target="_blank">GET {{ index }} <i class="fas fa-external-link-alt"></i></a>
 </p>
 
 <h5 class="mt-5">{{ l.headlines.create }}</h5>
 <p>{{ l.explainers.create }}</p>
 
-<form class="mb-3" action="/tasks.json" method="post" target="_blank">
+<form class="mb-3" action="{{ 'tasks__create' | path_for: format: 'json' }}" method="post" target="_blank">
 	<div class="input-group">
 		<input type="hidden" name="company_id" value="{{ company_id }}">
 		<input type="hidden" name="_id" value="{{ task_id }}">
@@ -30,13 +30,13 @@
 
 {% capture show %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
 <p>
-	<a href="{{ show }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a>
+	<a href="{{ 'tasks__show' | path_for: format: 'json', id: task_id, company_id: company_id }}" target="_blank">GET {{ show }} <i class="fas fa-external-link-alt"></i></a>
 </p>
 
 <h5 class="mt-5">{{ l.headlines.update }}</h5>
 <p>{{ l.explainers.update }}</p>
 
-<form class="mb-3" action="/tasks/{{ task_id }}.json" method="post" target="_blank">
+<form class="mb-3" action="{{ 'tasks__update' | path_for: id: task_id, format: 'json' }}" method="post" target="_blank">
 	<div class="input-group">
 		<input type="hidden" name="_method" value="patch">
 		<input type="hidden" name="company_id" value="{{ company_id }}">
@@ -51,7 +51,7 @@
 <p>{{ l.explainers.destroy }}</p>
 
 {% capture destroy %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
-<form action="{{ destroy }}" method="post" target="_blank">
+<form action="{{ 'tasks__destroy' | path_for: format: 'json' }}" method="post" target="_blank">
 	<div class="input-group">
 		<input type="hidden" name="_method" value="delete">
 		<input type="hidden" name="company_id" value="{{ company_id }}">
