@@ -13,7 +13,7 @@
     "explainers": {
       "create": "Create a task with a name of your choosing.",
       "destroy": "Destroy the task.",
-      "index": "Check to confirm that no tasks exists.",
+      "index": "Check to whish tasks exist.",
       "show": "Check the created task.",
       "update": "Update the name of the task.",
       "refresh": "Refresh your browser tab to try again."
