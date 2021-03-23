@@ -14,14 +14,12 @@
 <h5 class="mt-5">{{ l.headlines.create }}</h5>
 <p>{{ l.explainers.create }}</p>
 
-<form class="mb-3" action="{{ 'tasks__create' | path_for: format: 'json' }}" method="post" target="_blank" data-remote="true">
+<form class="mb-3" action="{{ 'tasks__create' | path_for: format: 'json' }}" method="post">
   <div class="input-group">
     <input type="hidden" name="company_id" value="{{ company_id }}">
     <input type="hidden" name="_id" value="{{ task_id }}">
     <input class="form-control" type="text" name="name" placeholder="{{ l.placeholders.create_name }}">
-    <button type="submit" class="btn btn-outline-primary">
-      {{ l.buttons.create }} <i class="fas fa-external-link-alt"></i>
-    </button>
+    <input type="submit" class="btn btn-outline-primary" value="{{ l.buttons.create }}">
   </div>
 </form>
 
