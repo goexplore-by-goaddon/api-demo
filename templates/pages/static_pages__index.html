@@ -1,3 +1,11 @@
+<script>
+  $("form").on("ajax:success", function(event, data, status, xhr) {
+    return flashAlert("success", data);
+  }).on("ajax:error", function(event, xhr, status, error) {
+    return flashAlert("danger", xhr);
+  });
+</script>
+
 <h1 class="display-4">{{ l.headline }}</h1>
 <p>{{ l.explainer }}.</p>
 {% assign company_id   = "" | new_object_id %}
