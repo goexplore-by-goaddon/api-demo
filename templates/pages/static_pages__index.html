@@ -53,11 +53,10 @@
 <p>{{ l.explainers.destroy }}</p>
 
 {% capture destroy %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
-<form action="{{ 'tasks__destroy' | path_for: format: 'json' }}" method="post" target="_blank" data-turbo="false">
+<form action="{{ 'tasks__destroy' | path_for: id: task_id, format: 'json' }}" method="post" target="_blank" data-turbo="false">
   <div class="input-group">
     <input type="hidden" name="_method" value="delete">
     <input type="hidden" name="company_id" value="{{ company_id }}">
-    <input type="hidden" name="_id" value="{{ task_id }}">
     <button type="submit" class="bg-body border-0 link-primary p-0">
       DELETE {{ destroy }} <i class="fas fa-external-link-alt"></i>
     </button>
