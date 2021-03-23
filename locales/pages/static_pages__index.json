@@ -3,12 +3,12 @@
     "headline": "Welcome",
     "explainer": "This is a demo API",
     "headlines": {
-      "create": "Create task",
-      "destroy": "Destroy task",
-      "index": "Check tasks",
-      "show": "Show task",
-      "update": "Update task",
-      "refresh": "Refresh page"
+      "index": "1. Check tasks",
+      "create": "2. Create a task",
+      "show": "3. Check the task",
+      "update": "4. Update the task",
+      "destroy": "5. Destroy the task",
+      "refresh": "6. Refresh the page"
     },
     "explainers": {
       "create": "Create a task with a name of your choosing.",
