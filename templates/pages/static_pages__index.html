@@ -37,13 +37,14 @@
 <h5 class="mt-5">{{ l.headlines.update }}</h5>
 <p>{{ l.explainers.update }}</p>
 
-<form class="mb-3" action="{{ 'tasks__update' | path_for: id: task_id, format: 'json' }}" method="post" target="_blank">
+<form class="mb-3" action="{{ 'tasks__update' | path_for: id: task_id, format: 'json' }}" method="post" target="_blank" data-turbo="false">
   <div class="input-group">
     <input type="hidden" name="_method" value="patch">
     <input type="hidden" name="company_id" value="{{ company_id }}">
-    <input class="form-control me-3" type="text" name="name" placeholder="{{ l.placeholders.update_name }}">
+    <input class="form-control" type="text" name="name" placeholder="{{ l.placeholders.update_name }}">
     <button type="submit" class="btn btn-outline-primary">
-      {{ l.buttons.update }} <i class="fas fa-external-link-alt"></i>
+      <i class="fas fa-external-link-alt"></i>
+      {{ l.buttons.update }}
     </button>
   </div>
 </form>
@@ -52,12 +53,12 @@
 <p>{{ l.explainers.destroy }}</p>
 
 {% capture destroy %}/tasks/{{ task_id }}.json?company_id={{ company_id }}{% endcapture %}
-<form action="{{ 'tasks__destroy' | path_for: format: 'json' }}" method="post" target="_blank">
+<form action="{{ 'tasks__destroy' | path_for: format: 'json' }}" method="post" target="_blank" data-turbo="false">
   <div class="input-group">
     <input type="hidden" name="_method" value="delete">
     <input type="hidden" name="company_id" value="{{ company_id }}">
     <input type="hidden" name="_id" value="{{ task_id }}">
-    <button type="submit" class="text-primary" style="background:none; border: none; padding:0 !important;">
+    <button type="submit" class="bg-body border-0 link-primary p-0">
       DELETE {{ destroy }} <i class="fas fa-external-link-alt"></i>
     </button>
   </div>
