@@ -1,11 +1,11 @@
 {% if params.company_id == nil %}
-	{"status": "422", "message": "{{ l.company_missing }}"}
+  {"status": "422", "message": "{{ l.company_missing }}"}
 {% else %}
-	{% assign tasks_deletion = "destroy_task" | db_delete_one: company_id: params.company_id, _id: params.id %}
+  {% assign tasks_deletion = "destroy_task" | db_delete_one: company_id: params.company_id, _id: params.id %}
 
-	{% if tasks_deletion.destroyed_count != 1 %}
-		{"status": "422", "message": "{{ l.not_destroyed }}"}
-	{% else %}
-		{"status": "200", "message": "{{ l.destroyed }}"}
-	{% endif %}
+  {% if tasks_deletion.destroyed_count != 1 %}
+    {"status": "422", "message": "{{ l.not_destroyed }}"}
+  {% else %}
+    {"status": "200", "message": "{{ l.destroyed }}"}
+  {% endif %}
 {% endif %}

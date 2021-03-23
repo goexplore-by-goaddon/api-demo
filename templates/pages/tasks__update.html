@@ -1,13 +1,13 @@
 {% if params.company_id == nil or params.name == nil %}
-	{"status": "422", "message": "{{ l.params_missing }}"}
+  {"status": "422", "message": "{{ l.params_missing }}"}
 {% else %}
-	{% assign tasks_update = "update_task" | db_update_one: company_id: params.company_id, name: params.name, _id: params.id %}
+  {% assign tasks_update = "update_task" | db_update_one: company_id: params.company_id, name: params.name, _id: params.id %}
 
-	{% if tasks_update.matched_count != 1 %}
-		{"status": "422", "message": "{{ l.not_found }}"}
-	{% elsif tasks_update.updated_count != 1 %}
-		{"status": "422", "message": "{{ l.not_updated }}"}
-	{% else %}
-		{"status": "200", "message": "{{ l.updated }}"}
-	{% endif %}
+  {% if tasks_update.matched_count != 1 %}
+    {"status": "422", "message": "{{ l.not_found }}"}
+  {% elsif tasks_update.updated_count != 1 %}
+    {"status": "422", "message": "{{ l.not_updated }}"}
+  {% else %}
+    {"status": "200", "message": "{{ l.updated }}"}
+  {% endif %}
 {% endif %}

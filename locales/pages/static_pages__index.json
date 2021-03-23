@@ -1,30 +1,30 @@
 {
-	"en": {
-		"headline": "Welcome",
-		"explainer": "This is a demo API",
-		"headlines": {
-			"create": "Create task",
-			"destroy": "Destroy task",
-			"index": "Check tasks",
-			"show": "Show task",
-			"update": "Update task",
-			"refresh": "Refresh page"
-		},
-		"explainers": {
-			"create": "Create a task with a name of your choosing.",
-			"destroy": "Destroy the task.",
-			"index": "Check to confirm that no tasks exists.",
-			"show": "Check the created task.",
-			"update": "Update the name of the task.",
-			"refresh": "Refresh your browser tab to try again."
-		},
-		"placeholders": {
-			"create_name": "Enter task name...",
-			"update_name": "Enter task name..."
-		},
-		"buttons": {
-			"create": "Create",
-			"update": "Update"
-		}
-	}
+  "en": {
+    "headline": "Welcome",
+    "explainer": "This is a demo API",
+    "headlines": {
+      "create": "Create task",
+      "destroy": "Destroy task",
+      "index": "Check tasks",
+      "show": "Show task",
+      "update": "Update task",
+      "refresh": "Refresh page"
+    },
+    "explainers": {
+      "create": "Create a task with a name of your choosing.",
+      "destroy": "Destroy the task.",
+      "index": "Check to confirm that no tasks exists.",
+      "show": "Check the created task.",
+      "update": "Update the name of the task.",
+      "refresh": "Refresh your browser tab to try again."
+    },
+    "placeholders": {
+      "create_name": "Enter task name...",
+      "update_name": "Enter task name..."
+    },
+    "buttons": {
+      "create": "Create",
+      "update": "Update"
+    }
+  }
 }

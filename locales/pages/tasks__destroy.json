@@ -1,7 +1,7 @@
 {
-	"en": {
-		"company_missing": "Company not specified",
-		"destroyed": "You've destroyed the task",
-		"not_destroyed": "No task was destroyed"
-	}
+  "en": {
+    "company_missing": "Company not specified",
+    "destroyed": "You've destroyed the task",
+    "not_destroyed": "No task was destroyed"
+  }
 }

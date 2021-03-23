@@ -1,8 +1,8 @@
 {
-	"en": {
-		"params_missing": "One or more informations are missing",
-		"updated": "You've updated the task",
-		"not_found": "The task wasn't found",
-		"not_updated": "The task wasn't updated"
-	}
+  "en": {
+    "params_missing": "One or more informations are missing",
+    "updated": "You've updated the task",
+    "not_found": "The task wasn't found",
+    "not_updated": "The task wasn't updated"
+  }
 }
