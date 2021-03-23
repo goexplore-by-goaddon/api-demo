@@ -1,8 +1,8 @@
 <script>
   document.addEventListener("turbo:load", function() {
     $("form").on("ajax:success", function(data) {
-      console.log(data);
-      return flashAlert("success", data);
+      console.log(data.originalEvent.detail);
+      return flashAlert("success", data.originalEvent.detail[0]);
     }).on("ajax:error", function(event, xhr, status, error) {
       console.log(xhr);
       console.log(error);
