@@ -1,9 +1,7 @@
 <script>
   document.addEventListener("turbo:load", function() {
-    $("form").on("ajax:success", function(event, data, status, xhr) {
-      console.log(event.originalEvent.detail);
-      console.log(xhr);
-      console.log(xhr.responseText);
+    $("form").on("ajax:success", function(data) {
+      console.log(data);
       return flashAlert("success", data);
     }).on("ajax:error", function(event, xhr, status, error) {
       console.log(xhr);
@@ -15,7 +13,7 @@
 
 <h1 class="display-4">{{ l.headline }}</h1>
 <p>{{ l.explainer }}.</p>
-{% assign company_id   = "" | new_object_id %}
+{% assign company_id  = "" | new_object_id %}
 {% assign task_id     = "" | new_object_id %}
 
 <h5 class="mt-5">{{ l.headlines.index }}</h5>
