@@ -1,10 +1,5 @@
 <script>
   document.addEventListener("turbo:load", function() {
-    $("form").on("ajax:success", function(event, data, status, xhr) {
-      return flashAlert("success", "Success");
-    }).on("ajax:error", function(event, xhr, status, error) {
-      return flashAlert("danger", "Error");
-    });
   });
 </script>
 
@@ -24,7 +19,7 @@
 <h5 class="mt-5">{{ l.headlines.create }}</h5>
 <p>{{ l.explainers.create }}</p>
 
-<form class="mb-3" action="{{ 'tasks__create' | path_for }}" method="post">
+<form class="mb-3" action="{{ 'tasks__create' | path_for }}" method="post", target="_blank">
   <div class="input-group">
     <input type="hidden" name="company_id" value="{{ company_id }}">
     <input type="hidden" name="_id" value="{{ task_id }}">
