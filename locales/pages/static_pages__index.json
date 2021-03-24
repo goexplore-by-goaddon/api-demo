@@ -4,7 +4,8 @@
     "explainer": {
       "p1": "This is a demo CRUD API. The goal is to demonstrate how to setup an API that can be intercted with without authorization. To make the API private, simply add a check for the existence and validity of",
       "p2": "{{ headers.authorization }}",
-      "p3": "of the request. Try going through the steps below, one by one."
+      "p3": "of the request.",
+      "p4": "Try going through the steps below, one by one."
     },
     "headlines": {
       "index": "1. Check tasks",
