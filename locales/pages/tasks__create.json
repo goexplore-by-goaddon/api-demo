@@ -1,7 +1,7 @@
 {
   "en": {
     "params_missing": "One or more informations are missing",
-    "created": "You've created a task",
-    "not_created": "The task wasn't created"
+    "created": "You have created a task",
+    "not_created": "The task could not created"
   }
 }

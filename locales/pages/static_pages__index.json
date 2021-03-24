@@ -1,7 +1,11 @@
 {
   "en": {
     "headline": "Welcome",
-    "explainer": "This is a demo API",
+    "explainer": {
+      "p1": "This is a CRUD demo API. Try going through the step below, one by one. The goal of this demo is to demonstrate how to up an API that can be intercted with without being required to authorize yourself. To shield off the API, simply add a check for the existence and validity of",
+      "p2": "{{ headers.authorization }}",
+      "p3": "of the request."
+    },
     "headlines": {
       "index": "1. Check tasks",
       "create": "2. Create a task",
@@ -11,11 +15,11 @@
       "refresh": "6. Refresh the page"
     },
     "explainers": {
-      "create": "Create a task with a name of your choosing.",
-      "destroy": "Destroy the task.",
-      "index": "Check to verify that no tasks exists.",
-      "show": "Check the created task.",
-      "update": "Update the name of the task.",
+      "index": "Verify that no tasks exists:",
+      "create": "Create a task with a name of your choosing:",
+      "show": "Check the created task:",
+      "update": "Update the name of the task:",
+      "destroy": "Destroy the task:",
       "refresh": "Refresh your browser tab to try again."
     },
     "placeholders": {
