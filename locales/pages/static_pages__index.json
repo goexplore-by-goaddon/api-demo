@@ -2,7 +2,7 @@
   "en": {
     "headline": "Welcome",
     "explainer": {
-      "p1": "This is a CRUD demo API. Try going through the step below, one by one. The goal of this demo is to demonstrate how to up an API that can be intercted with without being required to authorize yourself. To shield off the API, simply add a check for the existence and validity of",
+      "p1": "This is a demo CRUD API. Try going through the steps below, one by one. The goal of this demo is to demonstrate how to up an API that can be intercted with without being required to authorize yourself. To shield off the API, simply add a check for the existence and validity of",
       "p2": "{{ headers.authorization }}",
       "p3": "of the request."
     },
