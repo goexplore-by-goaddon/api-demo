@@ -6,6 +6,6 @@
   {% if tasks_deletion.destroyed_count != 1 %}
     {"status": "422", "message": "{{ l.not_destroyed }}"}
   {% else %}
-    {"status": "200", "message": "{{ l.destroyed }}"}
+    {"status": "200", "message": "{{ l.destroyed }}", "tasks_deletion": "{{ tasks_deletion }}"}
   {% endif %}
 {% endif %}
