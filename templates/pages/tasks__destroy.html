@@ -3,9 +3,9 @@
 {% else %}
   {% assign tasks_deletion = "destroy_task" | db_delete_one: company_id: params.company_id, _id: params.id %}
 
-  {% if tasks_deletion.destroyed_count != 1 %}
+  {% if tasks_deletion.deleted_count != 1 %}
     {"status": "422", "message": "{{ l.not_destroyed }}"}
   {% else %}
-    {"status": "200", "message": "{{ l.destroyed }}", "tasks_deletion": "{{ tasks_deletion }}"}
+    {"status": "200", "message": "{{ l.destroyed }}"}
   {% endif %}
 {% endif %}
