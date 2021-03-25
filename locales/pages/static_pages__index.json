@@ -3,10 +3,10 @@
     "title": "API Demo",
     "headline": "Welcome",
     "explainer": {
-      "p1": "This is a demo CRUD API. The goal is to demonstrate how to setup an API that can be intercted with without authorization. To make the API private, simply add a check for the existence and validity of",
-      "p2": "{{ headers.authorization }}",
-      "p3": "of the request.",
-      "p4": "Try going through the steps below, one by one."
+      "p1": "This is a demo CRUD API. The goal is to demonstrate how to setup a RESTful JSON API. The API handles both requests with and without an authorization header.",
+      "p2": "The requests you make from the interface below are not authorized. In order to make requests that contains an auhtorization header you can sign up for an account at the",
+      "p3": "webhook demo",
+      "p4": "another demo projects of ours."
     },
     "headlines": {
       "index": "1. Check tasks",

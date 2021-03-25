@@ -1,12 +1,11 @@
 <h1 class="display-4">{{ l.headline }}</h1>
 <p>
   {{ l.explainer.p1 }}
-  <code>{{ l.explainer.p2 }}</code>
-  {{ l.explainer.p3 }}
 </p>
 <p>
-  {{ l.explainer.p4 }}
+  {{ l.explainer.p2 }} <a href="https://webhook-demo.goaddon.com" target="_blank">{{ l.explainer.p3 }} <i class="fas fa-external-link-alt"></i></a>, {{ l.explainer.p4 }}
 </p>
+
 {% assign company_id  = "" | new_object_id %}
 {% assign task_id     = "" | new_object_id %}
 
