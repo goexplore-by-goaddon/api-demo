@@ -3,8 +3,8 @@
     "title": "API Demo",
     "headline": "Welcome",
     "explainer": {
-      "p1": "This is a demo CRUD API. The goal is to demonstrate how to setup a RESTful JSON API. The API handles both requests with and without an authorization header.",
-      "p2": "The requests you make from the interface below are not authorized. In order to make requests that contains an auhtorization header you can sign up for an account at the",
+      "p1": "This is a demo API. The goal is to demonstrate how to setup a RESTful JSON API. The API handles both requests with and without an authorization header.",
+      "p2": "The requests you make from the interface below are not authorized. In order to make requests that contains an authorization header you can sign up for an account at the",
       "p3": "webhook demo",
       "p4": "another demo projects of ours."
     },
