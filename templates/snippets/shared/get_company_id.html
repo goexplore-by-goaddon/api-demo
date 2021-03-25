@@ -1,0 +1,9 @@
+{% if headers.authorization != nil and headers.authorization != "" %}
+
+  {% assign company_id = headers.authorization %}
+
+{% elsif params.company_id != nil %}
+
+  {% assign company_id = params.company_id %}
+
+{% endif %}

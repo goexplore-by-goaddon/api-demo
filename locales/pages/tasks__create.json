@@ -1,6 +1,7 @@
 {
   "en": {
-    "params_missing": "One or more informations are missing",
+    "no_company_id": "No company_id or authorization token provided",
+    "no_name": "No task name provided",
     "created": "You have created a task",
     "not_created": "The task could not created"
   }

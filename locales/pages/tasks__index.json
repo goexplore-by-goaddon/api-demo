@@ -1,5 +1,5 @@
 {
   "en": {
-    "no_company_id": "No company_id provided"
+    "no_company_id": "No company_id or authorization token provided"
   }
 }

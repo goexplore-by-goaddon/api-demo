@@ -1,6 +1,6 @@
 {
   "en": {
-    "company_missing": "No company_id provided",
+    "no_company_id": "No company_id or authorization token provided",
     "destroyed": "You have destroyed the task",
     "not_destroyed": "No task could be destroyed"
   }

@@ -1,5 +1,6 @@
 {
   "en": {
+    "title": "API Demo",
     "headline": "Welcome",
     "explainer": {
       "p1": "This is a demo CRUD API. The goal is to demonstrate how to setup an API that can be intercted with without authorization. To make the API private, simply add a check for the existence and validity of",

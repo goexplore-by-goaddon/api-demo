@@ -1,11 +1,20 @@
-{% if params.company_id == nil %}
-  {"status": "422", "message": "{{ l.company_missing }}"}
+{% include "shared/get_company_id" %}
+
+{% if company_id == nil %}
+
+  {"status": "422", "message": "{{ l.no_company_id }}"}
+
 {% else %}
-  {% assign tasks_deletion = "destroy_task" | db_delete_one: company_id: params.company_id, _id: params.id %}
+
+  {% assign tasks_deletion = "destroy_task" | db_delete_one: company_id: company_id, _id: params.id %}
 
   {% if tasks_deletion.deleted_count != 1 %}
+
     {"status": "422", "message": "{{ l.not_destroyed }}"}
+
   {% else %}
+
     {"status": "200", "message": "{{ l.destroyed }}"}
+
   {% endif %}
 {% endif %}

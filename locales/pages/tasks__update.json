@@ -1,6 +1,7 @@
 {
   "en": {
-    "params_missing": "One or more informations are missing",
+    "no_company_id": "No company_id or authorization token provided",
+    "no_name": "No task name provided",
     "updated": "You have updated the task",
     "not_found": "The task wasn't found",
     "not_updated": "The task wasn't updated"
